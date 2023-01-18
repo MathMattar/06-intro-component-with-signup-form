@@ -190,13 +190,20 @@ main {
   text-decoration: none;
 }
 
-.error__input {
+/* -------------------------------------------- */
+
+.form__input--error {
   color: var(--color-primary-red);
   border: 1px solid var(--color-primary-red);
 }
 
-.error__input::placeholder {
+.form__input--error::placeholder {
   color: var(--color-primary-red);
+}
+
+.form__input--error:focus{
+    color: var(--color-primary-red);
+    border: 1px solid var(--color-primary-red);
 }
 
 .error__alert {
@@ -206,7 +213,6 @@ main {
   text-align: end;
   color: var(--color-primary-red);
   margin-top: 1rem;
-  visibility: hidden;
 }
 
 .error__image {
@@ -237,6 +243,8 @@ main {
   top: 60.25%;
   right: 15%;
 }
+
+/* -------------------------------------------- */
 
 .attribution {
   display: flex;

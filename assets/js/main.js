@@ -1,9 +1,35 @@
-/* const btnTryFree = document.getElementById("btn-try-free");
-const firstName = document.getElementById("firt-name");
+const form = document.getElementById("form");
+const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const btn = document.getElementById("submit");
+const messageError = document.getElementById("error__alert");
 
-const errorAlert = document.getElementById("error_alert");
-const errorImage = document.getElementById("error__image"); */
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    checkInputs();
+    console.log("Enviou");
+});
+
+function checkInputs() {
+    const firstNameValue = firstName.value.trim();
+    const lastNameValue = lastName.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+    if (firstNameValue === "") {
+        showError("error__alert", "First Name cannot be empty");
+        showIcon("error__image--one");
+    }
+}
+function showError(errorElement, errorMessage) {
+    let warning = document.querySelector("." + errorElement);
+    warning.innerHTML = errorMessage;
+
+}
+
+function showIcon(iconElement) {
+    let icon = document.getElementsByClassName(iconElement);
+    icon.classList.add("error__image--visible");
+}

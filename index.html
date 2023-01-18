@@ -24,15 +24,12 @@
 </head>
 
 <body>
+
     <main>
         <section class="text">
-            <h1 class="text__title">
-                Learn to code by watching others
-            </h1>
-            <p class="text__paragraph">
-                See how experienced developers solve problems in real-time. Watching scripted tutorials is
-                great, but understanding how developers think is invaluable.
-            </p>
+            <h1 class="text__title">Learn to code by watching others</h1>
+            <p class="text__paragraph">See how experienced developers solve problems in real-time. Watching scripted
+                tutorials is great, but understanding how developers think is invaluable.</p>
         </section>
 
         <section class="action">
@@ -40,12 +37,32 @@
                     Try it free 7 days</span> then $20/mo. thereafter
             </button>
 
-            <section class="action--white-box">
-                <form class="form">
-                    <input type="text" class="form__first-name" id="firt-name" placeholder="First Name">
-                    <input type="text" class="form__last-name" id="last-name" placeholder="Last Name">
-                    <input type="email" class="form__email" id="email" placeholder="Email Address">
-                    <input type="password" class="form__password" id="password" placeholder="Password">
+            <section class="action__white-box">
+                <form class="form" id="form" autocomplete="off">
+                    <input type="text" class="form__input" id="firt-name" placeholder="First Name">
+                    <div class="error" id="error">
+                        <p class="error__alert">First Name cannot be empty</p>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--one" id="error__image">
+                    </div>
+
+                    <input type="text" class="form__input" id="last-name" placeholder="Last Name">
+                    <div class="error" id="error">
+                        <p class="error__alert">Last Name cannot be empty</p>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--two" id="error__image">
+                    </div>
+
+                    <input type="email" class="form__input" id="email" placeholder="Email Address">
+                    <div class="error" id="error">
+                        <p class="error__alert">Looks like this is not an email</p>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--three" id="error__image">
+                    </div>
+
+                    <input type="password" class="form__input form__input--password" id="password" placeholder="Password">
+                    <div class="error" id="error">
+                        <p class="error__alert">Password cannot be empty</p>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--four" id="error__image">
+                    </div>
+
                     <button class="form__submit" id="submit">
                         Claim your free trial
                     </button>
@@ -61,12 +78,14 @@
 
     <footer class="attribution">
         <p class="attribution__text">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="attribution__text--link"
-                target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://www.linkedin.com/in/mathewsmattar/" class="attribution__text--link"
-                target="_blank">Mathews Mattar</a>.
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="attribution__text--link" target="_blank">
+                Frontend Mentor</a>.Coded by <a href="https://www.linkedin.com/in/mathewsmattar/"
+                class="attribution__text--link" target="_blank">Mathews Mattar</a>.
         </p>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

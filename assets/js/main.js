@@ -36,7 +36,11 @@ function checkInputs() {
     errorIcon("error__image--one");
     errorBorder("form__input--first");
   } else {
-    removeError("error__alert--first", "error__image--one", "form__input--first");
+    removeErrors(
+      "error__alert--first",
+      "error__image--one",
+      "form__input--first"
+    );
   }
 
   if (lastNameValue === "") {
@@ -50,8 +54,12 @@ function checkInputs() {
     );
     errorIcon("error__image--two");
     errorBorder("form__input--last");
-  }  else {
-    removeError("error__alert--last", "error__image--two", "form__input--last");
+  } else {
+    removeErrors(
+      "error__alert--last",
+      "error__image--two",
+      "form__input--last"
+    );
   }
 
   if (emailValue === "") {
@@ -62,8 +70,12 @@ function checkInputs() {
     errorAlert("error__alert--email", "Looks like this is not an email");
     errorIcon("error__image--three");
     errorBorder("form__input--email");
-  }  else {
-    removeError("error__alert--email", "error__image--three", "form__input--email");
+  } else {
+    removeErrors(
+      "error__alert--email",
+      "error__image--three",
+      "form__input--email"
+    );
   }
 
   if (passwordValue === "") {
@@ -77,8 +89,12 @@ function checkInputs() {
     );
     errorIcon("error__image--four");
     errorBorder("form__input--password");
-  }  else {
-    removeError("error__alert--password", "error__image--four", "form__input--password");
+  } else {
+    removeErrors(
+      "error__alert--password",
+      "error__image--four",
+      "form__input--password"
+    );
   }
 }
 
@@ -110,11 +126,11 @@ function checkEmail(email) {
 
 function checkPassword(password) {
   let correctPassword =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-_+={}[\]|;:'",.<>?\/])[A-Za-z\d$@$!%*?&#.$($)$-_+={}[\]|;:'",.<>?\/]{8,20}$(?![\s])/;
   return correctPassword.test(password);
 }
 
-function removeError(alert, image, input) {
+function removeErrors(alert, image, input) {
   document.querySelector("." + alert).innerHTML = "";
   document.querySelector("." + image).classList.remove("error__image--visible");
   document.querySelector("." + input).classList.remove("form__input--error");

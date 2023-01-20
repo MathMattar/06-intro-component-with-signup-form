@@ -136,6 +136,14 @@ main {
   flex-direction: column;
 }
 
+.form__input--position-first,
+.form__input--position-last,
+.form__input--position-email,
+.form__input--position-password,
+.form__input--position{
+  position: relative;
+}
+
 .form__input--first,
 .form__input--last,
 .form__input--email,
@@ -235,24 +243,12 @@ main {
     display:block;
 }
 
-.error__image.error__image--one {
-  top: 23%;
-  right: 15%;
-}
-
-.error__image.error__image--two {
-  top: 35.25%;
-  right: 15%;
-}
-
-.error__image.error__image--three {
-  top: 47.75%;
-  right: 15%;
-}
-
+.error__image.error__image--one,
+.error__image.error__image--two, 
+.error__image.error__image--three,
 .error__image.error__image--four {
-  top: 60.25%;
-  right: 15%;
+  top: 36%;
+  right: 2%;
 }
 
 /* -------------------------------------------- */

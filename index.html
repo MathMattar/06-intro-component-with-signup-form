@@ -39,29 +39,33 @@
 
             <section class="action__white-box">
                 <form class="form" id="form" autocomplete="off">
-                    <input type="text" class="form__input--first" id="first-name" placeholder="First Name">
+                    <div class="form__input--position">
+                        <input type="text" class="form__input--first" id="first-name" placeholder="First Name">
+                        <div class="error__alert--first" id="error__alert"></div>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--one"
+                            id="error__image">
+                    </div>
 
-                    <div class="error__alert--first" id="error__alert"></div>
+                    <div class="form__input--position">
+                        <input type="text" class="form__input--last" id="last-name" placeholder="Last Name">
+                        <div class="error__alert--last" id="error__alert"></div>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--two"
+                            id="error__image">
+                    </div>
 
-                    <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--one" id="error__image">
+                    <div class="form__input--position">
+                        <input type="email" class="form__input--email" id="email" placeholder="Email Address">
+                        <div class="error__alert--email" id="error__alert"></div>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--three"
+                            id="error__image">
+                    </div>
 
-                    <input type="text" class="form__input--last" id="last-name" placeholder="Last Name">
-
-                    <div class="error__alert--last" id="error__alert"></div>
-
-                    <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--two" id="error__image">
-
-                    <input type="email" class="form__input--email" id="email" placeholder="Email Address">
-
-                    <div class="error__alert--email" id="error__alert"></div>
-
-                    <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--three" id="error__image">
-
-                    <input type="password" class="form__input--password" id="password" placeholder="Password">
-                    
-                    <div class="error__alert--password" id="error__alert"></div>
-
-                    <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--four" id="error__image">
+                    <div class="form__input--position">
+                        <input type="password" class="form__input--password" id="password" placeholder="Password">
+                        <div class="error__alert--password" id="error__alert"></div>
+                        <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--four"
+                            id="error__image">
+                    </div>
 
                     <button class="form__submit" id="submit">
                         Claim your free trial

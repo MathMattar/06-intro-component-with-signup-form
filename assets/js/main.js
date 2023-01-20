@@ -9,7 +9,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
-  console.log("Enviou");
 });
 
 form.addEventListener("keyup", (e) => {
@@ -82,7 +81,7 @@ function checkInputs() {
     errorAlert("error__alert--password", "Password cannot be empty");
     errorIcon("error__image--four");
     errorBorder("form__input--password");
-  } else if (checkEmail(passwordValue) !== true) {
+  } else if (checkPassword(passwordValue) !== true) {
     errorAlert(
       "error__alert--password",
       "Minimum of one character uppercase, one lowercase and one special. <br>No blanks from 8 to 16 characters"

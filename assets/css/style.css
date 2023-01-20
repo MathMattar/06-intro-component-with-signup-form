@@ -286,6 +286,7 @@ main {
     flex-direction: column;
     max-width: 33rem;
     width: var(--width-mobile);
+    height: 100%;
   }
 
   .text {
@@ -316,11 +317,19 @@ main {
     padding: var(--action-white-box-padding-mobile);
   }
 
+  .form__input--first,
+  .form__input--last,
+  .form__input--email,
+  .form__input--password,
   .form__input {
     box-sizing: border-box;
     font-size: var(--size-12);
     width: var(--width-mobile);
     padding: var(--form-input-padding-mobile);
+  }
+
+  .form__input--password::placeholder{
+    font-size: 12px;
   }
 
   .form__submit {

@@ -75,7 +75,7 @@ body {
   background-color: var(--color-primary-red);
   background-image: var(--background-image-desktop);
   width: 100vw;
-  height: 80rem;
+  height: 100vh;
   max-height: 100%;
   max-width: 100%;
 }

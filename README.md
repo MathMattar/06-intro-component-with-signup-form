@@ -32,7 +32,7 @@ Os usuários devem ser capazes de:
 ### Screenshot
 
 <p align="center">
-    <img width="375px" src="./assets/presentation/desktop.jpg"></img>
+    <img width="375px" src="./assets/presentation/mobile.jpg"></img>
 </p>
 
 ------

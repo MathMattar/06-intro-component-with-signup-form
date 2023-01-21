@@ -9,6 +9,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
+
+  reloadPage();
 });
 
 form.addEventListener("keyup", (e) => {
@@ -133,4 +135,19 @@ function removeErrors(alert, image, input) {
   document.querySelector("." + alert).innerHTML = "";
   document.querySelector("." + image).classList.remove("error__image--visible");
   document.querySelector("." + input).classList.remove("form__input--error");
+}
+
+function reloadPage() {
+  if (
+    firstName.value !== "" &&
+    checkName(firstName.value) === true &&
+    lastName.value !== "" &&
+    checkName(lastName.value) === true &&
+    email.value !== "" &&
+    checkEmail(email.value) === true &&
+    password.value !== "" &&
+    checkPassword(password.value) === true
+  ) {
+    location.reload();
+  }
 }

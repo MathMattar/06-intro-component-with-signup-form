@@ -26,7 +26,7 @@ Os usuários devem ser capazes de:
 - Estados de foco para todos os elementos interativos na página;
 - Enviar seu endereço de e-mail usando um campo `input`;
 - Receber mensagem de erro quando o formulário for enviado se:
-  - Qualquer campo de `input` estiver vazio. A mensagem para este erro deve dizer *"nome do campo não pode estar vázio"*.
+  - Qualquer campo de `input` estiver vazio. A mensagem para este erro deve dizer *"nome do campo não pode estar vazio"*.
   - O endereço de email não está formatado corretamente, ou seja, um endereço de email deve ter uma estrutura `nome@host.tld`. A mensagem para este erro deve dizer: *"Parece que este não é um email"*
 
 ### Screenshot

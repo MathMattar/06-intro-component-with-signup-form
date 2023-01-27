@@ -40,14 +40,14 @@
             <section class="action__white-box">
                 <form class="form" id="form" autocomplete="off">
                     <div class="form__input--position">
-                        <input type="text" class="form__input--first" id="first-name" placeholder="First Name">
+                        <input type="text" class="form__input--first" id="first-name" minlength="3" maxlength="20" placeholder="First Name">
                         <div class="error__alert--first" id="error__alert"></div>
                         <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--one"
                             id="error__image">
                     </div>
 
                     <div class="form__input--position">
-                        <input type="text" class="form__input--last" id="last-name" placeholder="Last Name">
+                        <input type="text" class="form__input--last" id="last-name" minlength="3" maxlength="20" placeholder="Last Name">
                         <div class="error__alert--last" id="error__alert"></div>
                         <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--two"
                             id="error__image">
@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="form__input--position">
-                        <input type="password" class="form__input--password" id="password" placeholder="Password">
+                        <input type="password" class="form__input--password" id="password" minlength="8" maxlength="20" placeholder="Password">
                         <div class="error__alert--password" id="error__alert"></div>
                         <img src="./assets/images/icon-error.svg" alt="error" class="error__image error__image--four"
                             id="error__image">

@@ -49,7 +49,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Site: [Sign Up Form](https://mathmattar.github.io/intro-component-with-signup-form/);
+- Site: [Sign Up Form](https://mathmattar.github.io/06-intro-component-with-signup-form/);
 
 ## Processo
 

@@ -115,7 +115,7 @@ function errorBorder(element) {
 }
 
 function checkName(fullName) {
-  let name = /^[a-zA-Z]{3,20}(\s[a-zA-Z]{1,19}){0,1}$/;
+  let name = /^[a-zA-Z]{2,20}(\s[a-zA-Z]{1,19}){0,1}$/;
   return name.test(fullName);
 }
 
